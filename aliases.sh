@@ -2,6 +2,56 @@
 # Aliases
 #
 
+# Clear
+
+alias clr="clear"
+
+# Change Directories
+
+alias .="cd .."
+alias ..="cd ../.."
+alias ...="cd ../../.."
+alias ....="cd ../../../.."
+alias .....="cd ../../../../.."
+
+
+#rage quit
+alias quitbitch="exit"
+alias shutup="exit"
+alias fuckoff="exit"
+alias killurself="sudo /sbin/shutdown"
+
+#package management
+alias stfupdate='sudo apt-get update && sudo apt-get upgrade'
+
+#top eating memory
+alias fatmf="ps auxf | sort -nr -k 4"
+
+
+## Colorize the ls output ##
+alias ls='ls --color=auto'
+ 
+## Use a long listing format ##
+alias ll='ls -la'
+ 
+## Show hidden files ##
+alias l.='ls -d .* --color=auto'
+
+## Colorize the grep command output for ease of use (good for log files)##
+alias grep='grep --color=auto'
+alias egrep='egrep --color=auto'
+alias fgrep='fgrep --color=auto'
+
+
+alias mkdir='mkdir -pv'
+
+# install  colordiff package :)
+alias diff='colordiff'
+
+alias jobs='jobs -l'
+
+alias openports='netstat -tulanp'
+
 # Docker
 alias dk='docker'
 alias dka='docker attach'
@@ -217,3 +267,6 @@ else
   alias dkcv='docker-compose version'
   alias dkcx='docker compose stop'
 fi
+
+
+
